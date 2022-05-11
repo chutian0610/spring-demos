@@ -42,32 +42,32 @@ public class CustomServiceTest {
                 .verifyComplete();
     }
 
-    @Test // #500
+    @Test
     void exceptionTriggersRollback() {
 
         service.save(new Customer(null, "Dave", "Matthews")) //
-                .as(StepVerifier::create) //
+                .as(StepVerifier::create)
                 .expectError() // Error because of the exception triggered within the service
                 .verify();
 
         // No data inserted due to rollback
-        service.findByLastName("Matthews") //
-                .as(StepVerifier::create) //
+        service.findByLastName("Matthews")
+                .as(StepVerifier::create)
                 .verifyComplete();
     }
 
-    @Test // #500
+    @Test
     void insertsDataTransactionally() {
 
         service.save(new Customer(null, "Carter", "Beauford")) //
-                .as(StepVerifier::create) //
-                .expectNextMatches(Customer::hasId) //
+                .as(StepVerifier::create)
+                .expectNextMatches(Customer::hasId)
                 .verifyComplete();
 
         // Data inserted due to commit
-        service.findByLastName("Beauford") //
-                .as(StepVerifier::create) //
-                .expectNextMatches(Customer::hasId) //
+        service.findByLastName("Beauford")
+                .as(StepVerifier::create)
+                .expectNextMatches(Customer::hasId)
                 .verifyComplete();
     }
 }
