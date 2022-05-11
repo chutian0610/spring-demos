@@ -1,4 +1,4 @@
-package info.victor.flux.web;
+package info.victor.flux.hello;
 
 import info.victor.flux.model.Response;
 import org.springframework.context.annotation.Bean;
