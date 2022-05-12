@@ -38,6 +38,7 @@ public class CustomTransactionalService {
     public Mono<Page<Customer>> findByPage(PageRequest pageRequest){
         return repository.findAllBy(pageRequest.withSort(Sort.by("id").descending()))
                 .collectList()
+                .log()
                 .zipWith(repository.count())
                 .map(t -> new PageImpl<>(t.getT1(), pageRequest, t.getT2()));
     }
