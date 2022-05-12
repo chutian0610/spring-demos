@@ -1,4 +1,4 @@
-package info.victor.flux.hello;
+package info.victor.flux.web.hello;
 
 import info.victor.flux.model.Response;
 import org.springframework.web.bind.annotation.GetMapping;
