@@ -8,7 +8,7 @@ create table customer
         primary key (id)
 );
 
-insert into customer value(1,"Chloe","O'Brian");
-insert into customer value(3,"Kim", "Bauer");
-insert into customer value(5,"David", "Palmer");
-insert into customer value(7,"Michelle", "Dessler");
+insert into customer(id,first_name,last_name) values(1,"Chloe","O'Brian");
+insert into customer(id,first_name,last_name) values(3,"Kim", "Bauer");
+insert into customer(id,first_name,last_name) values(5,"David", "Palmer");
+insert into customer(id,first_name,last_name) values(7,"Michelle", "Dessler");

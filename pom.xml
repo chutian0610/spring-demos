@@ -4,40 +4,21 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.example</groupId>
-  <artifactId>spring-demos</artifactId>
+  <groupId>info.victorchu.springdemos</groupId>
+  <artifactId>project-manager</artifactId>
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <name>project-manager</name>
 
+  <description>项目结构管理模块</description>
   <modules>
+    <!-- bom 模块-->
+    <module>boms/bom-2.6.7</module>
+
+    <!-- 其他模块 -->
     <module>web-fluxs/quickstart</module>
+
   </modules>
 
-  <name>spring-demos</name>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <spring.boot.bom.version>2.6.7</spring.boot.bom.version>
-  </properties>
-
-  <dependencyManagement>
-    <dependencies>
-
-
-
-      <!-- boms must on the bottom-->
-
-      <!--https://www.baeldung.com/spring-boot-dependency-management-custom-parent -->
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-dependencies</artifactId>
-        <version>${spring.boot.bom.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
 
 </project>

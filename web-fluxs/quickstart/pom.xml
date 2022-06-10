@@ -3,10 +3,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spring-demos</artifactId>
-        <groupId>org.example</groupId>
+        <artifactId>bom-2.6.7</artifactId>
+        <groupId>info.victorchu.springdemos</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
+        <relativePath>../../boms/bom-2.6.7/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -29,11 +29,12 @@
             <artifactId>spring-boot-starter-data-r2dbc</artifactId>
         </dependency>
 
-        <!-- r2dbc impl -->
+        <!-- r2dbc impl for mysql-->
         <!-- https://github.com/mirromutth/r2dbc-mysql -->
         <dependency>
             <groupId>dev.miku</groupId>
             <artifactId>r2dbc-mysql</artifactId>
+            <scope>runtime</scope>
         </dependency>
 
 
