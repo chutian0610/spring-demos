@@ -1,6 +1,6 @@
-package info.victor.flux.web.stream;
+package info.victorchu.webflux.quickstart.web.stream;
 
-import info.victor.flux.model.Random;
+import info.victorchu.webflux.quickstart.model.Random;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

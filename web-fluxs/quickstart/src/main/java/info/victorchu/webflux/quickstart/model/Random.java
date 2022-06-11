@@ -1,4 +1,4 @@
-package info.victor.flux.model;
+package info.victorchu.webflux.quickstart.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

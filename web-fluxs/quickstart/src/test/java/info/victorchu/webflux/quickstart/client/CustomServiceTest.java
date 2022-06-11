@@ -1,7 +1,7 @@
-package info.victor.flux.client;
+package info.victorchu.webflux.quickstart.client;
 
-import info.victor.flux.r2dbc.CustomTransactionalService;
-import info.victor.flux.r2dbc.Customer;
+import info.victorchu.webflux.quickstart.r2dbc.CustomTransactionalService;
+import info.victorchu.webflux.quickstart.r2dbc.Customer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +24,7 @@ public class CustomServiceTest {
         service.findByLastName("Palmer").collectList()
                 .log()
                 .as(StepVerifier::create)
-                .consumeNextWith(actual -> {
-                    assertThat(actual).containsExactlyInAnyOrder(customer);
-                })
+                .consumeNextWith(actual -> assertThat(actual).containsExactlyInAnyOrder(customer))
                 .verifyComplete();
     }
 
@@ -36,9 +34,7 @@ public class CustomServiceTest {
         service.searchByLastName("Palmer").collectList()
                 .log()
                 .as(StepVerifier::create)
-                .consumeNextWith(actual -> {
-                    assertThat(actual).containsExactlyInAnyOrder(customer);
-                })
+                .consumeNextWith(actual -> assertThat(actual).containsExactlyInAnyOrder(customer))
                 .verifyComplete();
     }
 

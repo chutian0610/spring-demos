@@ -1,4 +1,4 @@
-package info.victor.flux;
+package info.victorchu.webflux.quickstart;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

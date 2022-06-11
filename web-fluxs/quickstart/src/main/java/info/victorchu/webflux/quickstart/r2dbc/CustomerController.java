@@ -1,4 +1,4 @@
-package info.victor.flux.r2dbc;
+package info.victorchu.webflux.quickstart.r2dbc;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

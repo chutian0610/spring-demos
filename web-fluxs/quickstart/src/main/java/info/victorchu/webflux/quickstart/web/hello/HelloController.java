@@ -1,6 +1,6 @@
-package info.victor.flux.web.hello;
+package info.victorchu.webflux.quickstart.web.hello;
 
-import info.victor.flux.model.Response;
+import info.victorchu.webflux.quickstart.model.Response;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
@@ -12,7 +12,7 @@ import reactor.core.publisher.Mono;
 public class HelloController {
 
     @GetMapping("/v2/hello")
-    public Mono<Response> hello() {
+    public Mono<Response<?>> hello() {
         return Mono.just(Response.builder().code(100).message("hello world").build());
     }
 }

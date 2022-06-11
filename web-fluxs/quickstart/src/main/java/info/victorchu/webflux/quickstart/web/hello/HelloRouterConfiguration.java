@@ -1,6 +1,6 @@
-package info.victor.flux.web.hello;
+package info.victorchu.webflux.quickstart.web.hello;
 
-import info.victor.flux.model.Response;
+import info.victorchu.webflux.quickstart.model.Response;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;

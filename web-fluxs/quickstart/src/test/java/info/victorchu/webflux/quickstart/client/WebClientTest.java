@@ -1,4 +1,4 @@
-package info.victor.flux.client;
+package info.victorchu.webflux.quickstart.client;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -24,6 +24,7 @@ public class WebClientTest {
         String result = client.get().uri("/v1/hello").accept(MediaType.APPLICATION_JSON).retrieve().bodyToMono(String.class).block();
         System.out.println(result);
     }
+    @Test
     public void testHelloV2() {
         String result = client.get().uri("/v2/hello").accept(MediaType.APPLICATION_JSON).retrieve().bodyToMono(String.class).block();
         System.out.println(result);

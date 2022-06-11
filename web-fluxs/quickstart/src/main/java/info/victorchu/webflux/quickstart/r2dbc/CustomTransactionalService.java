@@ -1,4 +1,4 @@
-package info.victor.flux.r2dbc;
+package info.victorchu.webflux.quickstart.r2dbc;
 
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Sort;
