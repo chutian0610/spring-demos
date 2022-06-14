@@ -1,5 +1,7 @@
 # spring-demos
 
+该项目存储了spring的一些demo。 什么是demo？最小,完整,可验证例子 -- `a minimal, complete and verifiable example (mcve)`
+
 ## 构建
 
 ```shell

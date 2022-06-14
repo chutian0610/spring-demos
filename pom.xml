@@ -16,7 +16,12 @@
     <module>boms/bom-2.6.7</module>
 
     <!-- 其他模块 -->
+
+    <!-- web flux-->
     <module>web-fluxs/quickstart</module>
+
+    <!-- spring security-->
+    <module>spring-security/quickstart</module>
 
   </modules>
 
