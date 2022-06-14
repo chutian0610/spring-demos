@@ -11,6 +11,8 @@
 
     <name>bom-2.6.7</name>
 
+    <description>spring boot 2.6.7 的bom</description>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
